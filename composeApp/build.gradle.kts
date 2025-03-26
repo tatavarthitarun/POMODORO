@@ -100,7 +100,7 @@ compose.desktop {
             targetFormats(org.jetbrains.compose.desktop.application.dsl.TargetFormat.Dmg, org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi)
             packageName = "Pomodoro"
             packageVersion = "1.0.0"
-
+// ./gradlew packageMsi , ./gradlew run
             windows {
                 // Enable shortcut creation
                 shortcut = true
@@ -110,7 +110,6 @@ compose.desktop {
                 // iconFile.set(project.file("icon.ico"))
                 upgradeUuid = "9FC1E89C-5EF9-4CD3-8B9C-83011BA4316A"
             }
-
             macOS {
                 // macOS specific settings
                 bundleID = "com.tatav.pomodoro"
