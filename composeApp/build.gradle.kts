@@ -98,12 +98,16 @@ compose.desktop {
         mainClass = "com.tatav.pomodoro.MainKt"
         nativeDistributions {
             targetFormats(org.jetbrains.compose.desktop.application.dsl.TargetFormat.Dmg, org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi)
-            packageName = "com.tatav.pomodoro"
+            packageName = "Pomodoro"
             packageVersion = "1.0.0"
 
             windows {
+                // Enable shortcut creation
+                shortcut = true
+                // Set display name in Start Menu
                 menuGroup = "Pomodoro Timer"
-                // Generates .msi installer
+                // Optional: add your icon file if you have one
+                // iconFile.set(project.file("icon.ico"))
                 upgradeUuid = "9FC1E89C-5EF9-4CD3-8B9C-83011BA4316A"
             }
 
